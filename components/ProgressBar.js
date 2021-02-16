@@ -1,9 +1,9 @@
 import React from "react";
-​
-​
+
+
 const ProgressBar = (props) => {
   const {completed} = props;
-​
+
   if (completed < 25){
     this.text = 'Beginner'
     this.color = "#decd35"
@@ -20,7 +20,7 @@ const ProgressBar = (props) => {
     this.text = 'Master'
     this.color ="#73b9eb"
   }
-​
+
   const containerStyles = {
     height: 15,
     width: '85%',
@@ -28,7 +28,7 @@ const ProgressBar = (props) => {
     borderRadius: 30,
     margin: 26
   }
-​
+
   const fillerStyles = {
     height: '100%',
     width: `${completed}%`,
@@ -36,20 +36,21 @@ const ProgressBar = (props) => {
     borderRadius: 'inherit',
     textAlign: 'right'
   }
-​
+
   const labelStyles = {
     padding: 10,
     color: 'white',
     fontWeight: 'bold',
   }
-​
+
   const labelStyles1 = {
     padding: 0,
     color: this.color,
     fontWeight: 'bold',
-    textAlign: 'left'
+    textAlign: 'left',
+    fontStyle: 'normal'
   }
-​
+
   return (
   
     <div style={containerStyles}>
@@ -62,5 +63,5 @@ const ProgressBar = (props) => {
     </div>
   );
 };
-​
+
 export default ProgressBar;
